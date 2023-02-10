@@ -11,7 +11,7 @@ body {
 
 
 header {
-	background-image:url('./Images/assignmentbackground.jpg');
+	background-image:url("Images/assignmentbackground.jpg");
 	height: 100vh;
 	background-size:cover;
 	background-repeat: no-repeat;
