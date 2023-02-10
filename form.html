@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Application Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form.css">
+	<script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="header">
+		<img src="images/logo1.jpg">
+		<ul>
+			<li><a href="#">Application login</a></li>
+		</ul>
+		<h1><i class="fas fa-phone-alt"></i> Call 971900000</h1>
+	</div>
+	<div class="header2">
+		<h2>Application For Admission</h2>
+	</div>
+	<div class="header3">
+		<h3>Limited time offer: Apply FREE this week! Use Code NOWFREE on payment page.</h3>
+	</div>
+	<div class="main-content">
+		<div class="row">
+			<div class="girl"><img src="images/girl.png">
+			</div>
+			<div class="form">
+				<h4> Step 1- Basic Information</h4>
+				<form name="myForm" onsubmit="return validation()">
+					<table>
+						<tr>
+							<td>
+								<label for="fname"> First Name:</label>
+							</td>
+							<td>
+								<input type="text" id="fname" name="fname" > <br>
+							</td>
+							<tr>
+								<td>
+									<label for="lname"> Last Name:</label>
+								</td>
+								<td>
+									<input type="text" id="lname" name="lname" > <br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="address"> Mailing Address: </label>
+								</td>
+								<td>
+									<input type="text" name="address" id="address"><br>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="tel"> Phone No: </label>
+								</td>
+								<td>
+									<input type="text" name="tel" id="number"><br><br>
+									<span id="numbererror"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label for="email"> Email Address: </label>
+								</td>
+								<td>
+									<input type="text" name="" id="email" value=""><br><br>
+
+									<span id="emailerror"></span>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>
+									<label>College of Interest:</label>
+								</td>
+								<td>
+									<select id="college" name="college">
+										<option value="Select" selected>Select</option>
+										<option value="Mjp">Mjp Rohilkhand University, Bareilly</option>
+										<option value="Invertis" >Invertis University, kanpur</option>
+										<option value="Khandelwal">Khandelwal College,Pune</option>
+										<option value="ShriRam">Shri Ram Murti Smarak, ranchi</option>
+									</select><br>
+								</td>
+							</tr>
+							<td>
+								<label>Programme of Interest:</label>
+							</td>
+							<td>
+								<select id="Programme" name="Programme">
+									<option value="Select" selected>Select</option>
+									<option value="MBA">MBA</option>
+									<option value="Accounting" >Accounting & Finance</option>
+									<option value="Data">Data Science</option>
+									<option value="financial">financial Management</option>
+								</select><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="marks">Enter Class 10<sup>th</sup> Marks(%):</label>
+							</td>
+							<td>
+								<input type="text" id="marks" placeholder="Marks should be more than 75%">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="button"><a href="#">Submit</a></div>
+							</td>
+						</tr>
+
+
+					</table>
+				</form>
+
+			</div>
+		</div>
+		<div class="footer1"><h6>Thank you for applying</h6><p>WGU encourages applications from all individuals who have the capacity and determination to complete a rigorous competency-based online degree program.
+
+			We appreciate the opportunity to review your application to determine whether WGU is a good fit for you and, if it is, help you through the enrollment process.
+
+		Submitting your application begins the official part of the WGU enrollment process. We will review your application and contact you within two business days to discuss your status. (You should also receive an email after completing this application that covers the next steps in the enrollment process.)</p></div>
+		<div class="footer"><p> Privacy Policy | Site Map | Contact Us<br>
+
+			© 2020 Western Governors University. All Rights Reserved<br>
+
+			WGU is an accredited online university offering <br>online bachelor’s and master’s degree programs.</p></div>
+			<script>
+				function validation() {
+					var username=document.getElementById('username').value;
+					var password=document.getElementById('password').value;
+					var cpassword=document.getElementById('cpassword').value;
+					var email=document.getElementById('email').value;
+					var number=document.getElementById('number').value;
+
+					var usercheck = /^[ A-Za-z. ]{3,30}$/;
+					var passwordcheck = /^(?=.*[0-9]) (?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+					var emailcheck= /^[A-Za-z_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+					var numbercheck= /^[789][0-9]{9}$/;
+
+					if (usercheck.test(username)) {
+						document.getElementById('usererror').innerHTML= "";
+					}
+
+					else {
+						document.getElementById('usererror').innerHTML= "username is Invalid";
+						return false;
+					}
+
+					if (passwordcheck.test(password)) {
+						document.getElementById('passworderror').innerHTML= "";
+					}
+
+					else {
+						document.getElementById('passworderror').innerHTML= "password is Invalid";
+						return false;
+					}
+
+					if (cpasswordcheck.test(cpassword)) {
+						document.getElementById('cpassworderror').innerHTML= "";
+					}
+					else {
+						document.getElementById('cpassworderror').innerHTML= "password is Invalid";
+						return false;
+					}
+
+					if (emailcheck.test(email)) {
+						document.getElementById('emailerror').innerHTML= "";
+					}
+					else {
+						document.getElementById('emailerror').innerHTML= "email is Invalid";
+						return false;
+					}
+					if (numbercheck.test(number)) {
+						document.getElementById('numbererror').innerHTML= "";
+					}
+					else {
+						document.getElementById('numbererror').innerHTML= "number is Invalid";
+						return false;
+					}
+				}
+			</script>
+		</body>
+		</html>

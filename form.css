@@ -1,0 +1,134 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	
+}
+.header img {
+    width: 150px;
+	height: 80px;
+	border-radius: 70%;
+	float: left;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+.header ul li a{
+	float: right;
+	margin-right: 300px;
+	margin-top: 40px;
+	font-size: 20px;
+	list-style: none;
+	font-family: 'Flamenco', cursive;
+	font-weight: lighter;
+	color:#6dd5ed;
+}
+.header h1 {
+	float: right;
+	margin-right: -370px;
+	margin-top: 25px;
+	font-size: 20px;
+	font-family: 'Flamenco', cursive;
+	font-weight: lighter;
+	color:#6dd5ed;
+}
+.header2 {
+	width: 100%;
+	height: 100px;
+	background-color: #2193b0;
+}
+.header2 h2 {
+	color:#fff;
+	text-align: center;
+	font-size: 40px;
+	padding: 20px 0;
+}
+.header3 h3 {
+	width: 100%;
+	height: 70px;
+	background-color: #74ebd5;
+    color:#3c1053;
+	text-align: center;
+	font-size: 20px;
+	padding: 17px 0;
+}
+.main-content .row {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.form {
+	width: 70%;
+}
+.form h4 {
+	font-size: 30px;
+	color: #3c1053;
+	text-align: left;
+	padding: 20px 0;
+	font-family: 'Flamenco', cursive;
+}
+.form input[type="text"] {
+	float: left;
+	width: 300px;
+
+}
+.form #address {
+	width: 600px;
+}
+#tel,#email,#college,#Programme {
+	float:left;
+}
+label {
+	float: left;
+	color: grey;
+	font-weight: 900;
+}
+
+#fname,#lname,#address, #number,#email,#college,#Programme, #marks {
+	padding: 5px 0;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.button {
+	width: 100px;
+	height: 30px;
+	background-color: #6dd5ed;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button a {
+	
+	text-decoration: none;
+	color: white;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color:  #2193b0;
+	text-align: center;
+	padding: 100px 0;
+}
+.footer1 {
+	width: 100%;
+	height: 200px;
+	background-color: #74ebd5;
+	text-align: center;
+}
+.footer1 h6 {
+	font-size: 30px;
+	font-color:#2193b0;
+	line-height: 70px;
+	font-family: 'Flamenco', cursive;
+}
+.footer1 p {
+	margin-top: 20px;
+	font-size: 15px;
+	font-family: 'Flamenco', cursive;
+}
