@@ -11,7 +11,7 @@ body {
 
 
 header {
-	background-image:url('images/assignmentbackground.jpg');
+	background-image:url('Images/assignmentbackground.jpg');
 	height: 100vh;
 	background-size:cover;
 	background-repeat: no-repeat;
@@ -223,7 +223,7 @@ display: none;
 
 	}
  .section2 {
- 	background-image:url('images/back2.jpg');
+ 	background-image:url('Images/back2.jpg');
 	height: 100vh;
  	width: 100%;
  	height: 650px;
